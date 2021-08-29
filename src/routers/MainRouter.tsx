@@ -1,6 +1,8 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Footer } from '../components/common/Footer';
 import { Navigation } from '../components/common/Navigation';
 import { Home, Projects } from '../pages';
+import { Contact } from '../pages/Contact';
 
 export const MainRouter = () => {
     return (
@@ -12,15 +14,16 @@ export const MainRouter = () => {
                         <Projects />
                     </Route>
                     <Route path="/blog">
-                        <Home />
+                        <Redirect to='/' />
                     </Route>
                     <Route path="/contact">
-                        <Home />
+                        <Contact />
                     </Route>
                     <Route path="/">
                         <Home />
                     </Route>
                 </Switch>
+                <Footer/>
             </div>
         </Router>
     );
