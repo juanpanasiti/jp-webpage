@@ -11,10 +11,8 @@ export const Navigation = () => {
 
     const handleChangeLang = () => {
         if (lang.currentLang === 'es') {
-            console.log('Change to english');
             dispatch(setLangEn());
         } else {
-            console.log('cambiar a español');
             dispatch(setLangEs());
         }
     };

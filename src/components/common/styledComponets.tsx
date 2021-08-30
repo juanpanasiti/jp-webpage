@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const FakePageContainer = styled.div`
     padding: 0 3rem;
+    min-height: 80vh;
 `;
 
 const FakeBorderedButton = styled.div`
