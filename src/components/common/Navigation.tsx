@@ -52,6 +52,7 @@ const FakeMenuLinks = styled.nav`
     align-items: center;
     a {
         text-decoration: none;
+        color: white;
         padding: 0.1rem 0.2rem;
         margin-left: 1rem;
         :visited {
