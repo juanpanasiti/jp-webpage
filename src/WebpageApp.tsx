@@ -9,7 +9,7 @@ import { lightTheme } from './themes/lightTheme';
 const client = new GraphQLClient({
     url: 'https://graphql.datocms.com/',
     headers: {
-        'Authorization': `Bearer ${process.env.REACT_APP_DATOCMS_API_KEY}`
+        'Authorization': `Bearer 015c7436fe06dbaf24c4ab9658a798`
     }
 });
 
