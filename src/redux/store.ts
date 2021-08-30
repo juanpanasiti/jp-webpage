@@ -1,8 +1,8 @@
-import { createStore, combineReducers, compose, CombinedState, Reducer, Action } from 'redux';
+import { createStore, combineReducers, compose, CombinedState, Reducer } from 'redux';
 import { RootState } from '../interfaces/redux-interfaces/rootState';
 import { langReducer } from './reducers/langReducer';
 
-const rootReducer: Reducer<CombinedState<RootState>,any> = combineReducers({
+const rootReducer: Reducer<CombinedState<RootState>, any> = combineReducers({
     lang: langReducer,
 });
 
