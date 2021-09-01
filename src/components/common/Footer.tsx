@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook, faInstagram, faLinkedin, faTwitter, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faTwitter, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../interfaces/redux-interfaces/rootState';
 
@@ -9,27 +9,23 @@ export const Footer = () => {
     return (
         <FakeContainer>
             <FakeSocialsContainer>
-                <FakeSocial>
-                    <FontAwesomeIcon icon={faFacebook} />
-                    <FakeSpan>Facebook</FakeSpan>
-                </FakeSocial>
-                <FakeSocial>
+                <FakeSocial onClick={()=> window.open("https://twitter.com/JPanasiti", "_blank")}>
                     <FontAwesomeIcon icon={faTwitter} />
                     <FakeSpan>Twitter</FakeSpan>
                 </FakeSocial>
-                <FakeSocial>
+                <FakeSocial onClick={()=> window.open("https://www.linkedin.com/in/juanmpanasiti/", "_blank")} >
                     <FontAwesomeIcon icon={faLinkedin} />
                     <FakeSpan>LinkedIn</FakeSpan>
                 </FakeSocial>
-                <FakeSocial>
+                <FakeSocial onClick={()=> window.open("https://www.instagram.com/juanmpanasiti/", "_blank")} >
                     <FontAwesomeIcon icon={faInstagram} />
                     <FakeSpan>Instagram</FakeSpan>
                 </FakeSocial>
-                <FakeSocial>
+                <FakeSocial onClick={()=> window.open("https://github.com/juanpanasiti/", "_blank")} >
                     <FontAwesomeIcon icon={faGithub} />
                     <FakeSpan>Github</FakeSpan>
                 </FakeSocial>
-                <FakeSocial>
+                <FakeSocial onClick={()=> window.open("https://t.me/juanmpanasiti", "_blank")} >
                     <FontAwesomeIcon icon={faTelegram} />
                     <FakeSpan>Telegram</FakeSpan>
                 </FakeSocial>
@@ -64,6 +60,7 @@ const FakeSocial = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    cursor: pointer;
 `;
 const FakeSpan = styled.span`
 font-size: 12px;
