@@ -8,7 +8,6 @@ import { RootState } from '../../interfaces/redux-interfaces/rootState';
 import { FakeTitle } from '../common/styledComponets';
 
 export const AboutMe = () => {
-    const { mainTitle, paragraphs } = useSelector((state: RootState) => state.lang.strings.contactPageStrings.aboutMeComponent);
     const { currentLang } = useSelector((state: RootState) => state.lang);
     let title = null;
     let body = null;
