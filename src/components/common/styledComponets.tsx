@@ -20,6 +20,11 @@ const FakeBorderedButton = styled.div`
     justify-content: center;
     align-items: center;
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     :hover {
         color: white;
         border-color: white;

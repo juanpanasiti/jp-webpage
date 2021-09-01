@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import * as logos from '../assets/img';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
     const homeStrings = useSelector((state: RootState) => state.lang.strings.homePageStrings);
@@ -20,16 +21,20 @@ export const Home = () => {
             {/* Buttons call-to-action */}
             <FakeButtonsContainer>
                 <FakeBorderedButton style={{ fontSize: '20px' }}>
-                    <FontAwesomeIcon icon={faBriefcase} style={{ marginRight: '0.4rem' }} />
-                    <span>{homeStrings.toProjects}</span>
+                    <Link to="/projects">
+                        <FontAwesomeIcon icon={faBriefcase} style={{ marginRight: '0.4rem' }} />
+                        <span>{homeStrings.toProjects}</span>
+                    </Link>
                 </FakeBorderedButton>
-                <FakeBorderedButton style={{ fontSize: '20px' }}>
+                <FakeBorderedButton style={{ fontSize: '20px' }} onClick={() => window.open('https://github.com/juanpanasiti/', '_blank')}>
                     <FontAwesomeIcon icon={faGithub} style={{ marginRight: '0.4rem' }} />
                     <span>{homeStrings.toGithub}</span>
                 </FakeBorderedButton>
                 <FakeBorderedButton style={{ fontSize: '20px' }}>
-                    <FontAwesomeIcon icon={faLink} style={{ marginRight: '0.4rem' }} />
-                    <span>{homeStrings.toContact}</span>
+                    <Link to="/contact">
+                        <FontAwesomeIcon icon={faLink} style={{ marginRight: '0.4rem' }} />
+                        <span>{homeStrings.toContact}</span>
+                    </Link>
                 </FakeBorderedButton>
             </FakeButtonsContainer>
             {/* Techs */}
@@ -81,6 +86,7 @@ const FakeMainSubtitle = styled.div`
     font-family: 'Fira Mono';
     font-size: 30px;
     font-weight: lighter;
+    margin-top: 1rem;
 `;
 
 const FakeButtonsContainer = styled.div`

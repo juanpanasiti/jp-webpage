@@ -38,6 +38,3 @@ const FakeContainer = styled.div`
     padding: 1.5rem 0;
 `;
 
-const FakeParagraphs = styled.div`
-    font-size: 16px;
-`;
