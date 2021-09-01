@@ -5,6 +5,11 @@ const FakePageContainer = styled.div`
     min-height: 80vh;
 `;
 
+const FakeTitle = styled.span`
+    font-size: 30px;
+    font-family: 'Comfortaa';
+`;
+
 const FakeBorderedButton = styled.div`
     color: ${props => props.theme.primary};
     border: 2px solid ${props => props.theme.primary};
@@ -22,4 +27,4 @@ const FakeBorderedButton = styled.div`
     }
 `;
 
-export { FakeBorderedButton, FakePageContainer };
+export { FakeBorderedButton, FakePageContainer, FakeTitle };

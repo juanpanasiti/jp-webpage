@@ -1,7 +1,7 @@
 import { useQuery } from 'graphql-hooks'
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
-import { FakePageContainer } from '../components/common/styledComponets';
+import { FakePageContainer, FakeTitle } from '../components/common/styledComponets';
 import { getAllProjects } from '../graphql/projectQueries'
 import { Project } from '../interfaces/dato-cms/projectInterfaces';
 import { RootState } from '../interfaces/redux-interfaces/rootState';
@@ -67,10 +67,7 @@ const FakeTitleContainer = styled.div`
     align-items: center;
     column-gap: 1rem;
 `
-const FakeTitle = styled.span`
-    font-size: 30px;
-    font-family: 'Comfortaa';
-`
+
 const FakeKind = styled.span`
     font-family: 'Fira Mono';
     background-color: black;
