@@ -22,5 +22,13 @@ export const langEn: LangState = {
             otherToolsTitle: 'Other tools',
             reactAclarationTxt: 'Yes, React is indeed a library, not a framework, I know!',
         },
+        contactPageStrings: {
+            aboutMeComponent: {
+                mainTitle: "About Me",
+                paragraphs: [
+                    ""
+                ]
+            }
+        }
     },
 };

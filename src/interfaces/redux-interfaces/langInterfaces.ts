@@ -8,6 +8,7 @@ export interface Strings {
     navStrings: NavStrings;
     footerStrings: FooterStrings;
     homePageStrings: HomePageStrings;
+    contactPageStrings:ContactPageStrings;
 }
 
 export interface CommonsStrings {}
@@ -30,4 +31,13 @@ export interface HomePageStrings {
     frameworksTitle: string;
     otherToolsTitle: string;
     reactAclarationTxt: string;
+}
+
+export interface ContactPageStrings{
+    aboutMeComponent: AboutMeStrings;
+}
+
+export interface AboutMeStrings {
+    mainTitle: string;
+    paragraphs: string[];
 }
