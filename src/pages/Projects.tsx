@@ -2,7 +2,7 @@ import { useQuery } from 'graphql-hooks';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { Loading } from '../components/common/Loading';
-import { FakePageContainer, FakeTitle } from '../components/common/styledComponets';
+import { FakePageContainer } from '../components/common/styledComponets';
 import { ProjectCard } from '../components/projects/ProjectCard';
 import { getAllProjects } from '../graphql/projectQueries';
 import { Project } from '../interfaces/dato-cms/projectInterfaces';

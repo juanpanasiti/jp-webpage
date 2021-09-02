@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faHome, faCode, faGlobeAmericas, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faCode, faGlobeAmericas, faCircle } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import ReactMarkdown from 'react-markdown';
 
@@ -37,7 +37,7 @@ export const ProjectCard = ({ project, currentLang }: Props) => {
                 </FakeStatusContaner>
                 <FakeTagsContainer>
                     {tags.map(tag => (
-                        <FakeTag>{tag}</FakeTag>
+                        <FakeTag key={tag}>{tag}</FakeTag>
                     ))}
                 </FakeTagsContainer>
             </FakeInfoContainer>
@@ -125,7 +125,7 @@ const FakeImageContainer = styled.div`
     justify-content: center;
     align-items: center;
 `;
-const FakeSummary = styled.p`
+const FakeSummary = styled.span`
     margin: 0;
 `;
 
@@ -154,7 +154,7 @@ const FakeStatusContaner = styled.div`
     column-gap: 0.3rem;
     font-size: 1rem;
 `;
-const FakeStatus = styled.p`
+const FakeStatus = styled.span`
     font-size: 1rem;
     margin: 0;
 `;
