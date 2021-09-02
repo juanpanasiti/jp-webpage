@@ -8,6 +8,7 @@ export interface Strings {
     navStrings: NavStrings;
     footerStrings: FooterStrings;
     homePageStrings: HomePageStrings;
+    howToContactStrings: HowToContactStrings;
 }
 
 export interface CommonsStrings {}
@@ -32,4 +33,8 @@ export interface HomePageStrings {
     reactAclarationTxt: string;
 }
 
-
+export interface HowToContactStrings {
+    title: string;
+    subtitle: string;
+    scanCodeSubtitle: string;
+}

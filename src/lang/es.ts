@@ -22,5 +22,10 @@ export const langEs: LangState = {
             otherToolsTitle: 'Otras herramientas',
             reactAclarationTxt: 'Si, React es en realidad una librería, no un framework, lo sé!',
         },
+        howToContactStrings:{
+            title: '¿Cómo contactarme?',
+            subtitle: 'Puedes contactarme a través de:',
+            scanCodeSubtitle: 'O puedes agregarme como contacto con este QR:'
+        }
     },
 };

@@ -15,7 +15,7 @@ export const Home = () => {
             {/* My name and profession */}
             <FakeTitleContainer>
                 <FakeMainTitle>Juan M. Panasiti</FakeMainTitle>
-                <FakeMainSubtitle>{"<Developer seniority='Jr.' />"}</FakeMainSubtitle>
+                <FakeMainSubtitle>{"<Developer langs=['JS','TS','Python'] />"}</FakeMainSubtitle>
             </FakeTitleContainer>
 
             {/* Buttons call-to-action */}
@@ -37,6 +37,7 @@ export const Home = () => {
                     </Link>
                 </FakeBorderedButton>
             </FakeButtonsContainer>
+            
             {/* Techs */}
             <FakeTechsContainer>
                 {/* Languages */}

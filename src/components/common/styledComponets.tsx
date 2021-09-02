@@ -5,9 +5,15 @@ const FakePageContainer = styled.div`
     min-height: 80vh;
 `;
 
-const FakeTitle = styled.span`
+const FakeTitle = styled.h1`
     font-size: 30px;
     font-family: 'Comfortaa';
+`;
+const FakeSubtitle = styled.h2`
+    font-size: 25px;
+    font-family: 'Comfortaa';
+    margin: 0;
+    padding: 1rem 0;
 `;
 
 const FakeBorderedButton = styled.div`
@@ -32,4 +38,4 @@ const FakeBorderedButton = styled.div`
     }
 `;
 
-export { FakeBorderedButton, FakePageContainer, FakeTitle };
+export { FakeBorderedButton, FakePageContainer, FakeTitle, FakeSubtitle };

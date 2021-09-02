@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import { getAboutMe } from '../../graphql/aboutMeQueries';
 import { RootState } from '../../interfaces/redux-interfaces/rootState';
 import { FakeTitle } from '../common/styledComponets';
+import { Loading } from '../common/Loading';
 
 export const AboutMe = () => {
     const { currentLang } = useSelector((state: RootState) => state.lang);
@@ -20,7 +21,7 @@ export const AboutMe = () => {
         console.error(error);
     }
     if (loading) {
-        return <div>Loading...</div>;
+        return <Loading/>;
     }
     if (data) {
         title = data.aboutMe.title;
