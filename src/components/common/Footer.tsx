@@ -46,7 +46,8 @@ const FakeContainer = styled.div`
 
 const FakeRigths = styled.span`
     align-self: flex-start;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    padding-top: 0.5rem;
 `
 
 const FakeSocialsContainer = styled.div`

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faKeyboard, faHome, faSuitcase, faComment, faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { faKeyboard, faHome, faLaptopCode, faComment, faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 import { RootState } from '../../interfaces/redux-interfaces/rootState';
 import { setLangEn, setLangEs } from '../../redux/actions/langActions';
@@ -21,14 +21,14 @@ export const Navigation = () => {
     };
     return (
         <Nav>
-            <FakeBrand>{'<JP/>'}</FakeBrand>
+            <FakeBrand><Link to="/">{'<JP/>'}</Link></FakeBrand>
             <FakeMenuLinks>
                 <MenuItem>
                     <FontAwesomeIcon icon={faHome} />
                     <Link to="/">{strings.toHomeTxt}</Link>
                 </MenuItem>
                 <MenuItem>
-                    <FontAwesomeIcon icon={faSuitcase} />
+                    <FontAwesomeIcon icon={faLaptopCode} />
                     <Link to="/projects">{strings.toProjectsTxt}</Link>
                 </MenuItem>
                 <MenuItem>
@@ -59,6 +59,14 @@ const FakeBrand = styled.div`
     font-size: 30px;
     font-family: 'Comfortaa', 'Arial';
     font-weight: bolder;
+
+    a {
+        text-decoration: none;
+        color: white;
+        :visited {
+            color: white;
+        }
+    }
 `;
 
 const MenuItem = styled.div`
