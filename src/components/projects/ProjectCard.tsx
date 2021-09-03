@@ -16,7 +16,6 @@ export const ProjectCard = ({ project, currentLang }: Props) => {
     const tags = project.tags.split(',');
     const { status, color } = getStatusProject({ status: project.projectStatus as any, lang: currentLang });
     const handleClick = (url: any) => {
-        console.log('url', url);
         if (url) {
             window.open(url, '_blank');
         }
