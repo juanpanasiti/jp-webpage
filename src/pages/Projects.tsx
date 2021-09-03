@@ -44,5 +44,6 @@ const FakeProjectsContainer = styled.div`
     display: flex;
     row-gap: 0.5rem;
     padding: 0.5rem 0;
+    flex-direction: column;
 `;
 
