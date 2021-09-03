@@ -129,7 +129,6 @@ const FakeSummary = styled.span`
 `;
 
 const FakeImage = styled.img`
-    align-self: flex-end;
     width: 300px;
 `;
 
