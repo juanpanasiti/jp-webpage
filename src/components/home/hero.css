@@ -1,0 +1,32 @@
+.hero__container {
+    background-image: linear-gradient(15deg, #13547aaa 0%, #80d0c7aa 100%), url('../../assets/imgs/hero_backgound.webp');
+    background-position: center;
+    background-size: cover;    
+    height: 100vh;
+    min-height: 650px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+    padding: 2rem 1rem;
+}
+
+.hero__title {
+    font-family: 'Poppins';
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.hero__pre {
+    font-family: 'Roboto Mono';
+}
+
+.hero__button-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 3rem;
+}
